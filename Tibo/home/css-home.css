@@ -1,0 +1,34 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+ }
+ body {
+    margin: 0;
+    background-color: white;
+ }
+ *, *::before, *::after {
+    box-sizing: border-box;
+ }
+ 
+ main {
+    margin: 15rem;/**kan weg **/
+ }
+
+
+
+/* header*/
+
+header{
+    width: 100%;
+    height: 30rem;
+}
+
+
+
+
+/*niewtjes*/
+
+main .niewtjes{
+   border-radius: 10rem;
+   border-color: black;
+}
