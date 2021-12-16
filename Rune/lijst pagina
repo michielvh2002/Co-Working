@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bieren</title>
+    <link rel="stylesheet" href="../Style/list.css">
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="../" rel="Home">Home</a></li>
+        <li><a href="../bier">Bier</a></li>
+        <li><a href="../wijn">Wijn</a></li>
+        <li><a href="../sterke">Sterke drank</a></li>
+        <li><a href="../aboutus">About us</a></li>
+    </ul>
+</header>
+<main>
+    <h1>Bieren</h1>
+    <ul class="container">
+        <li>
+            <img src="https://imgur.com/J0ubrxj.png" alt="Affligem">
+            <a href="../bieren"><h3>Affligem Blond</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/NfBF4KI.png" alt="Cornet">
+            <a href="../bieren/cornet.html"><h3>Cornet</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/tdMMnh9.png" alt="Wieze">
+            <a href="../bieren/wieze.html"><h3>Wieze</h3></a>
+        </li>
+    </ul>
+    <ul class="container">
+        <li>
+            <img src="https://imgur.com/vzew01Q.png" alt="Duvel">
+            <a href="../bieren/duvel.html"><h3>Duvel</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/zMGfNCR.png" alt="Palm">
+            <a href="../bieren/palm.html"><h3>Palm</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/nUQ94xU.png" alt="La Trappe">
+            <a href="../bieren/latrappe.html"><h3>La Trappe</h3></a>
+        </li>
+    </ul>
+</main>
+<footer>
+    <p>Co-Working - groep 7 - socials - copyright</p>
+</footer>
+</body>
+</html>
