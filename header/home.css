@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    padding: 0.5rem;
+    background-image: linear-gradient(#ebcc86, #d99800);
+    border: 6px solid #000000;
+    gap: 15px;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+ul{
+    list-style-type: none;
+}
+.vertical {
+    border-left: 6px solid black;
+    height: 320px;
+    position: static;
+    left: 50%;
+    margin: 0;
+}
+.button
+{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 8px;
+    transition: 0.35s;
+    border: 0.3rem solid #000000
+}
+.button:hover a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover
+{
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+    transition: 0.35s;
+}
+h2 {
+    text-align: center;
+    font-family: "Old English Text MT", serif;
+}
