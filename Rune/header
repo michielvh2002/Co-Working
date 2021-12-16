@@ -1,0 +1,28 @@
+<main>
+    <ul class="container">
+        <li>
+            <a href="./"><img src="https://imgur.com/t5KC7Np.png" alt=""></a>
+            <h2>Home</h2>
+        </li>
+        <div class="vertical"></div>
+        <li class="bier">
+            <a href="bier/"><img src="https://imgur.com/Ig83dHY.png" alt="Bierglas"></a>
+            <h2>Bier</h2>
+        </li>
+        <div class="vertical"></div>
+        <li class="wijn">
+            <a href="/wijn"><img src="https://imgur.com/Ap6IZ6O.png" alt="Wijn"></a>
+            <h2>Wijn</h2>
+        </li>
+        <div class="vertical"></div>
+        <li>
+            <a href="/sterke"><img src="https://imgur.com/KdPL0qQ.png" alt="Sterke Drank"></a>
+            <h2>Sterke drank</h2>
+        </li>
+        <div class="vertical"></div>
+        <li>
+            <a href="#"><h2 class="button">Login</h2></a>
+            <a href="#"><h2 class="button">Registreren</h2></a>
+        </li>
+    </ul>
+</main>
