@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #C1d1d4;
+}
+
+main{
+    height: 80rem;
+}
+form{
+    height: 40rem;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 50px 35px;
+    padding-bottom: 12rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+form *{
+    letter-spacing: 0.5px;
+    
+}
+form h1{
+    text-align: center;
+}
+
+form div{
+    display: flex;
+    justify-content: space-evenly;
+    height: 2rem;
+    margin-top: 0.5rem;
+    
+}
+
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20rem;
+}
+
+.selectVeld{
+    background-color: #E6E6E6;
+}
+
+.labelmeerkeus{
+    margin: 0;
+}
+
+label{
+    display: block;
+    margin-top: 2rem;
+}
+input{
+    border-radius: 8px;
+    margin-top: 0.6rem;
+    border: 1px solid black;
+}
+.inputVeld{
+    height: 2.9rem;
+    width: 100%;
+    background-color: #E6E6E6;
+}
+
+#btnRegistreren{
+    margin-top: 2.9rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
