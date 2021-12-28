@@ -8,6 +8,34 @@ body {
 main{
     height: 80rem;
 }
+
+header{
+    padding: 1.2rem;
+    background-image: linear-gradient(#ebcc86, #d99800);
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnRegistrerheader{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 form{
     height: 40rem;
     width: 400px;
@@ -19,7 +47,7 @@ form{
     border: 2px solid black;
     padding: 50px 35px;
     padding-bottom: 12rem;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-bottom: 10rem;
 }
 form *{
