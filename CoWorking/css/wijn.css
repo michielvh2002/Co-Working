@@ -1,0 +1,42 @@
+.container ul {
+    display: grid;
+    
+}
+main {
+    margin: 1rem;
+    gap: rem;
+
+}
+main ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+main li {
+    border: 3px solid black;
+    padding: 2rem;
+    width: 25rem;
+    margin-top: 1rem;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 10fr,1fr,2fr;
+    grid-template-areas: "img"
+    "h2"
+    "p";
+}
+.info {
+    text-align: justify;
+    width: auto;
+    grid-area: p;
+}
+main li img {
+    grid-area: img;
+    height: 22rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productNaam {
+    margin-bottom: 0;
+    text-align: center;
+    grid-area: h2;
+}

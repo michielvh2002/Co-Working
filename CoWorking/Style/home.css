@@ -1,0 +1,155 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    background-color: #C1d1d4;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+
+
+/* header*/
+
+header .container {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #d0d0d0;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+    gap: 15px;
+    max-height: 20rem;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    max-width: 120rem;
+}
+
+
+header .container ul li a img {
+    max-height: 10rem;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header .home a img {
+    height: 15rem;
+    border-right: 6px;
+}
+
+header .bier a img {
+    height: 15rem;
+    border-right: 6px;
+}
+
+header .wijn a img {
+    height: 15rem;
+}
+
+header .sterke a img {
+    height: 15rem;
+}
+header .button {
+    display: flex;
+    font-size: 2rem;
+    padding: 8px;
+    transition: 0.35s;
+    border: 0.3rem solid #4D4D4D;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+header .button:hover a
+{
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+header .button:hover
+{
+    color: #ffffff;
+    background-color: #4D4D4D;
+    border-color: #4D4D4D;
+    transition: 0.35s;
+}
+header .container h2 {
+    text-align: center;
+    font-family: "Old English Text MT", serif;
+}
+
+
+
+/*niewtjes*/
+
+main .niewtjes{
+    width: 90rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: #E6E6E6;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+}
+
+main .niewtjes h1{
+    font-size: 5rem;
+    margin-left: 2rem;
+}
+
+main .niewtjes h2 {
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+main .niewtje p{
+    font-size: 2rem;
+    margin-left: 2rem;
+    width: 50rem;
+}
+
+main .niewtje{
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+main .niewtje img{
+    margin-left: 5rem;
+    width: 30rem;
+    height: 30rem;
+}
+
+main .inleiding-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.inleiding-link a{
+    border-radius: 3rem;
+    background-color: #d99800;
+    margin-top: 2rem;
+    margin-left: 18rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 3rem;
+    display: flex;
+    color: black;
+    width: 18rem;
+    justify-content: center;
+
+}
+.img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

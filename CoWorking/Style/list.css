@@ -1,0 +1,129 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    background-color: #C1d1d4;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+
+
+/* header*/
+
+header .container {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #d0d0d0;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+    gap: 15px;
+    max-height: 20rem;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    max-width: 120rem;
+}
+
+
+header .container ul li a img {
+    max-height: 10rem;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header .home a img {
+    height: 15rem;
+}
+
+header .bier a img {
+    height: 15rem;
+}
+
+header .wijn a img {
+    height: 15rem;
+}
+
+header .sterke a img {
+    height: 15rem;
+}
+header .button {
+    display: flex;
+    font-size: 2rem;
+    padding: 8px;
+    transition: 0.35s;
+    border: 0.3rem solid #4D4D4D;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+header .button:hover a
+{
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+header .button:hover
+{
+    color: #ffffff;
+    background-color: #4D4D4D;
+    border-color: #4D4D4D;
+    transition: 0.35s;
+}
+header .container h2 {
+    text-align: center;
+    font-family: "Old English Text MT", serif;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    text-align: center;
+    justify-content: center;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    width: 8rem;
+}
+h3 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.container {
+    display: flex;
+    padding: 0.5rem;
+    gap: 15px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    max-width: 90rem;
+}
+main li img{
+    background-color: #ffffff;
+
+}
+main li{
+    padding: 1rem;
+    border: 3px solid #000000;
+    box-shadow: 0.5rem -0.5rem #4d4d4d;
+    background-color: #ffffff;
+}
+body {
+    background-color: #C1d1d4;
+}
+.sterk{
+    width: 16rem;
+}
