@@ -1,10 +1,170 @@
-<h1>Helo</h1>
-<h2>hello</h2>
-<h3>Helllo</h3>
-<h4>hellllo</h4>
-<h5>helllllo</h5>
-<h5>helllllo</h5>
-<h4>hellllo</h4>
-<h3>Helllo</h3>
-<h2>hello</h2>
-<h1>Helo</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Widrinks Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style/home.css">
+    <link rel="stylesheet" href="./Style/footer.css">
+    	<!-- Hotjar Tracking Code for https://coworking.michielvanhimbeeck.ikdoeict.be/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2768771,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-216209027-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-216209027-1');
+</script>
+</head>
+<body onload="checkCookie()">
+<header>
+    <ul class="container">
+        <li class="home">
+            <a href="./"><img src="./img/Header/Home.png" alt=""></a>
+            <h2>Home</h2>
+        </li>
+
+        <li class="bier">
+            <a href="./bier/"><img src="./img/Header/Bierglas.png" alt="Bierglas"></a>
+            <h2>Bier</h2>
+        </li>
+
+        <li class="wijn">
+            <a href="./wijn/"><img src="./img/Header/Wijn.png" alt="Wijn"></a>
+            <h2>Wijn</h2>
+        </li>
+
+        <li class="sterke">
+            <a href="./sterke-drank/"><img src="./img/Header/SterkeDrank.png" alt="Sterke Drank"></a>
+            <h2>Sterke drank</h2>
+        </li>
+
+        <li>
+            <a href="./Login/"><h2 class="button">Login</h2></a>
+            <a href="./Registreren/"><h2 class="button">Registreren</h2></a>
+        </li>
+    </ul>
+</header>
+<main>
+    <div class="popup">
+        <h2>Leeftijdsverificatie</h2>
+        <p>Om deze site te betreden moet je ouder zijn dan 18</p>
+        <label for="age">Ik ben ouder dan 18</label>
+        <input type="checkbox" name="age" id="age" value="0">
+        <button onclick="setCookie()">Verder</button>
+    </div>
+    <div class="niewtjes">
+        <h1>Nieuwe weetjes van de week</h1>
+        <h2>Focus op Oud Bruin</h2>
+        <div class="niewtje">
+
+            <div class="inleiding-link" >
+                <p>Drie initiatieven om dit najaar toch nog Oud Bruin in de kijker te plaatsen als alternatief voor Oud Bruin FEST door Brouwerij ‘ Verzet
+                </p>
+
+                <a class="lees-meer" href="https://vlaamsebrouwers.be/focus-op-oud-bruin/" target="_blank">lees meer</a>
+
+            </div>
+
+            <img src="https://vlaamsebrouwers.be/wp-content/uploads/2021/12/Brouwerij-t-Vezet-kijk-op-de-brouwerij.jpg" alt="4 beer vaten">
+
+        </div>
+        <hr>
+        <h2>Nieuwe exclusieve bieren bij Domein Leeflank</h2>
+        <div class="niewtje">
+
+            <div class="inleiding-link" >
+                <p>Op Domein Leeflank leeft er zowel een passie voor wijn als bier. Begin 2016 kocht de familie het domein van één hectare en daarop werden 2650 wijnstokken aangeplant waaronder Chardonnay, Spätburgunder, Acolon en Nebbiolo.
+                </p>
+
+                <a class="lees-meer" href="https://vlaamsebrouwers.be/nieuwe-exclusieve-bieren-bij-domein-leeflank/" target="_blank">lees meer</a>
+
+            </div>
+
+            <img src="https://cdn.shortpixel.ai/spai/w_390+q_lossy+ret_img+to_webp/https://vlaamsebrouwers.be/wp-content/uploads/2021/12/Domein-Leeflank-Sour-Fresh-Hop-2020-Witte-van-Lee-en-Wine-Beer-Hybrid-2020.jpg" alt="2 biertje's">
+
+        </div>
+        <hr>
+        <h2>De reden dat brouwerij De Leite de bieren van Paljas overnam</h2>
+        <div class="niewtje">
+
+            <div class="inleiding-link" >
+                <p>“Ik ben van nature niet hyper ambitieus” vertelt Luc Vermeersch, eigenaar van Brouwerij De Leite maar Paljas kwam op zijn pad.
+                </p>
+
+                <a class="lees-meer" href="https://vlaamsebrouwers.be/de-reden-dat-brouwerij-de-leite-de-bieren-van-paljas-overnam/" target="_blank">lees meer</a>
+
+            </div>
+
+            <img src="https://vlaamsebrouwers.be/wp-content/uploads/2021/07/Luc-Vermeersch-in-de-brouwerij-De-Leite.jpg" alt="trotse eigenaar in zijn brouwerij">
+
+        </div>
+
+    </div>
+
+    <div class="niewtjes niewtje">
+        <div class="inleiding-link">
+            <h2>Beste bier deze week:</h2>
+            <p>Lees meer over het beste bier van deze week,<br> Affligem Blond!</p>
+            <a class="lees-meer" href="./bieren/index.html">lees meer</a>
+        </div>
+        <img class="img" src="./img/Bieren/BierVanDeWeek.png" alt="Affligem">
+    </div>
+
+
+
+</main>
+<footer>
+    <div class="us">
+        <h1>wij zijn ....          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore facere minus, et beatae quos? Non, esse ab. Aspernatur hic nesciunt quia eaque nostrum repudiandae! Consequuntur illum natus magnam esse?</h1>
+
+        <div class="personen">
+
+            <div class="persoon">
+                <h2>Michiel van Himbeeck</h2>
+                <img src="https://via.placeholder.com/100x100" alt="foto persoon">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa</p>
+            </div>
+
+            <div class="persoon">
+                <h2>Rune De Mesmaeker</h2>
+                <img src="https://via.placeholder.com/100x100" alt="foto persoon">
+                <p>Rune De Mesmaeker, 18 jaar,<br> Diploma Elektriciteit-Elektronica, 1790 Affligem</p>
+            </div>
+
+            <div class="persoon">
+                <h2>Tibo</h2>
+                <img src="https://via.placeholder.com/100x100" alt="foto persoon">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa</p>
+            </div>
+
+            <div class="persoon">
+                <h2>Mats</h2>
+                <img src="https://via.placeholder.com/100x100" alt="foto persoon">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa</p>
+            </div>
+
+            <div class="persoon">
+                <h2>Thor</h2>
+                <img src="https://via.placeholder.com/100x100" alt="foto persoon">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./javascript/cookies.js"></script>
+</body>
+</html>
