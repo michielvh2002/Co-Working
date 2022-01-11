@@ -1,0 +1,30 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    border: 6px solid #4D4D4D;
+    margin: 10rem;
+    padding: 2rem;
+    min-width: 292px;
+}
+
+.post{
+    min-width: 270px;
+    padding: 10px;
+    border: 2px solid black;
+    
+}
+
+.gb-datum{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gb {
+    margin-bottom: 6px;
+    
+}
+
+.datum {
+    color: rgb(129, 129, 129);
+}
+
