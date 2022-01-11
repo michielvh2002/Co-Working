@@ -107,24 +107,15 @@
         }
         ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registreren.css" class="css">
-    <script src="registreren.js"></script>
-    	<!-- Hotjar Tracking Code for https://coworking.michielvanhimbeeck.ikdoeict.be/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2768771,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Style/registreren.css" class="css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216209027-1"></script>
 <script>
@@ -138,12 +129,32 @@
 </head>
 <body onload="Start()">
     <header>
-        <div>
-           <button type="button" class="btnRegistrerheader"> <a href="../">terug</a></button> 
-        
-            <button type="submit" class="btnRegistrerheader">Registreer</button>
-        </div>
-        
+        <ul class="container">
+            <li class="home">
+                <a href="../"><img src="../img/Header/Home.png" alt=""></a>
+                <h2>Home</h2>
+            </li>
+    
+            <li class="bier">
+                <a href="../bier/"><img src="../img/Header/Bierglas.png" alt="Bierglas"></a>
+                <h2>Bier</h2>
+            </li>
+    
+            <li class="wijn">
+                <a href="../wijn"><img src="../img/Header/Wijn.png" alt="Wijn"></a>
+                <h2>Wijn</h2>
+            </li>
+    
+            <li class="sterke">
+                <a href="../sterke-drank"><img src="../img/Header/SterkeDrank.png" alt="Sterke Drank"></a>
+                <h2>Sterke drank</h2>
+            </li>
+    
+            <li>
+                <a href="../Login/"><h2 class="button">Login</h2></a>
+                <a href="./"><h2 class="button">Registreren</h2></a>
+            </li>
+        </ul>
     </header>
     <main>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
@@ -161,18 +172,18 @@
             <input type="text" id="email" name="email" class="inputVeld" value="<?php echo htmlentities($email); ?>">
             <span class="message error"><?php echo $msgEmail; ?></span>
 
-            <label for="wachtwoord">Wachtwoord</label>
+            <label for="wachtwoord1">Wachtwoord</label>
             <input type="password" id="wachtwoord1" name="wachtwoord1" class="inputVeld" value="<?php echo htmlentities($wachtwoord1); ?>">
             <span class="message error"><?php echo $msgWachtwoord1; ?></span>
 
-            <label for="wachtwoord">Herhaal je wachtwoord</label>
+            <label for="wachtwoord2">Herhaal je wachtwoord</label>
             <input type="password" id="wachtwoord2" name="wachtwoord2" class="inputVeld" value="<?php echo htmlentities($wachtwoord2); ?>">
             <span class="message error"><?php echo $msgWachtwoord2; ?></span>
 
 
             <label for="Geboortedatum"> Geboortedatum</label>
-            <div>
 
+            <div id="Geboortedatum">
                 <div class="select">
                     <label for="dag" class="labelmeerkeus">dag</label>
                     <select name="dag" class="selectVeld" id="dag"></select>
@@ -182,13 +193,15 @@
                     <select name="maand" class="selectVeld" id="maand"></select>
                 </div>
                 <div class="select">
-                <label for="jaar" class="labelmeerkeus">jaar</label>
+                    <label for="jaar" class="labelmeerkeus">jaar</label>
                     <select name="jaar" class="selectVeld" id="jaar"></select>
                 </div>
             </div>
             <span class="message error"><?php echo $msgGebdat; ?></span>
+
             <input type="submit" id="Registreren" name="Registreren" value="Registreer">
         </form>
     </main>
+    <script src="../javascript/registreren.js"></script>
 </body>
 </html>

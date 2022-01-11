@@ -1,0 +1,144 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #C1d1d4;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* header*/
+
+header .containerr {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #d0d0d0;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+    gap: 15px;
+    max-height: 20rem;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    max-width: 120rem;
+}
+
+
+header .container {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #d0d0d0;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+    gap: 15px;
+    max-height: 20rem;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    max-width: 120rem;
+}
+
+
+header .container ul li a img {
+    max-height: 10rem;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header .home a img {
+    height: 15rem;
+    border-right: 6px;
+}
+
+header .bier a img {
+    height: 15rem;
+    border-right: 6px;
+}
+
+header .wijn a img {
+    height: 15rem;
+}
+
+header .sterke a img {
+    height: 15rem;
+}
+header .button {
+    display: flex;
+    font-size: 2rem;
+    padding: 8px;
+    transition: 0.35s;
+    border: 0.3rem solid #4D4D4D;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+header .button:hover a
+{
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+header .button:hover
+{
+    color: #ffffff;
+    background-color: #4D4D4D;
+    border-color: #4D4D4D;
+    transition: 0.35s;
+}
+header .container h2 {
+    text-align: center;
+    font-family: "Old English Text MT", serif;
+}
+
+
+
+
+/*main*/
+form{
+    height: 520px;
+    width: 400px;
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 50px 35px;
+    background-color: #d0d0d0;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+}
+form *{
+    letter-spacing: 0.5px;
+    border: none;
+}
+form h1{
+    text-align: center;
+}
+label{
+    display: block;
+    margin-top: 2rem;
+}
+input{
+    height: 2.9rem;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 0.6rem;
+    border: 1px solid black;
+}
+#btnLogin{
+    margin-top: 2.9rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}

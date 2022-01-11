@@ -1,0 +1,36 @@
+ul {
+    display: grid;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+    border: 6px solid #4D4D4D;
+    max-width: 50rem;
+    margin: 10rem;
+    padding: 2rem;
+    min-width: 292px;
+}
+
+.post{
+    max-width: 50rem;
+    min-width: 17rem;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 1rem 0 1rem 0 ;
+}
+
+.gb-datum{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.gb {
+    margin-bottom: 6px;
+    
+}
+
+.datum {
+    color: rgb(129, 129, 129);
+}
+

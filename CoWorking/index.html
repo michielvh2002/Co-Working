@@ -29,7 +29,7 @@
   gtag('config', 'UA-216209027-1');
 </script>
 </head>
-<body>
+<body onload="checkCookie()">
 <header>
     <ul class="container">
         <li class="home">
@@ -38,17 +38,17 @@
         </li>
 
         <li class="bier">
-            <a href="bier/"><img src="./img/Header/Bierglas.png" alt="Bierglas"></a>
+            <a href="./bier/"><img src="./img/Header/Bierglas.png" alt="Bierglas"></a>
             <h2>Bier</h2>
         </li>
 
         <li class="wijn">
-            <a href="/wijn"><img src="./img/Header/Wijn.png" alt="Wijn"></a>
+            <a href="./wijn/"><img src="./img/Header/Wijn.png" alt="Wijn"></a>
             <h2>Wijn</h2>
         </li>
 
         <li class="sterke">
-            <a href="/sterke-drank"><img src="./img/Header/SterkeDrank.png" alt="Sterke Drank"></a>
+            <a href="./sterke-drank/"><img src="./img/Header/SterkeDrank.png" alt="Sterke Drank"></a>
             <h2>Sterke drank</h2>
         </li>
 
@@ -59,6 +59,13 @@
     </ul>
 </header>
 <main>
+    <div class="popup">
+        <h2>Leeftijdsverificatie</h2>
+        <p>Om deze site te betreden moet je ouder zijn dan 18</p>
+        <label for="age">Ik ben ouder dan 18</label>
+        <input type="checkbox" name="age" id="age" value="0">
+        <button onclick="setCookie()">Verder</button>
+    </div>
     <div class="niewtjes">
         <h1>Nieuwe weetjes van de week</h1>
         <h2>Focus op Oud Bruin</h2>
@@ -158,5 +165,6 @@
         </div>
     </div>
 </footer>
+<script src="./javascript/cookies.js"></script>
 </body>
 </html>
