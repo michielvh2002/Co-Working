@@ -12,23 +12,6 @@ body {
     box-sizing: border-box;
 }
 /* header*/
-
-header .containerr {
-    display: flex;
-    padding: 0.5rem;
-    background-color: #d0d0d0;
-    border: 3px solid #000000;
-    box-shadow: 0.4rem -0.4rem #4d4d4d;
-    gap: 15px;
-    max-height: 20rem;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    max-width: 120rem;
-}
-
-
 header .container {
     display: flex;
     padding: 0.5rem;

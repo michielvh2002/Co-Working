@@ -104,6 +104,7 @@ header .container h2 {
     border-radius: 8px;
     font-family: "Poppins",sans-serif;
     text-align: center;
+    display: none;
 }
 .popup button{
     display: block;

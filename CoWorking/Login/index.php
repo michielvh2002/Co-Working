@@ -50,14 +50,17 @@
 
 
                 if (isset($Email) && !empty($Email)){
-                    $stmt = $db->prepare("SELECT Password FROM users WHERE Email = :email");
+                    $stmt = $db->prepare("SELECT Password, UserName FROM users WHERE Email = :email");
                     $stmt->execute([
                         'email' => $email
                     ]);
                     $password = $stmt->fetch(PDO::FETCH_ASSOC);
 
-                    if (implode($password) === hash("sha256", $wachtwoord)) {
-                        $msgFout = 'Ingelogd';
+                    if ($password['Password'] === hash("sha256", $wachtwoord)) {
+                        session_start();
+                        // sessievariabele invullen
+                        $_SESSION["user"] = $password['UserName'];
+                        header("Location: ../");
                     }
                     else {
                         $msgFout = "Foute gebruikersnaam of wachtwoord!";
@@ -80,7 +83,10 @@
                         $password = $stmt->fetch(PDO::FETCH_ASSOC);
 
                         if (implode($password) === hash("sha256", $wachtwoord)) {
-                            $msgFout = 'Ingelogd';
+                            session_start();
+                            // sessievariabele invullen
+                            $_SESSION["widrinksUser"] = $email;
+                            header("Location: ../");
                         }
                         else {
                             $msgFout = "Foute gebruikersnaam of wachtwoord!";

@@ -28,9 +28,9 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("meerderjarig");
   if (user == "true") {
-    closeWindow();
+    //Geen scherm
   } else {
-    //scherm met vraag of je ouder bent dan 18
+    openWindow();
   }
 }
 //delete cookie -> test doeleinden
@@ -38,7 +38,10 @@ function delCookie()
 {
   document.cookie = "meerderjarig" + "=" + "true" + ";" + "expires = Thu, 01 Jan 1970 00:00:00 GMT" + ";path=/";
 }
-
+function openWindow()
+{
+  document.querySelector(".popup").style.display = "block";
+}
 function closeWindow()
 {
   document.querySelector(".popup").style.display = "none";
