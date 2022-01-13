@@ -37,6 +37,7 @@
         $msgGebrNaam = '';
         $msgWachtwoord1 = '';
         $msgWachtwoord2 = '';
+        $regError = '';
 
         // form is sent: perform formchecking!
         if (isset($_POST["Registreren"])) {
@@ -101,11 +102,20 @@
                 if($allOk) {
                     $stmt = $db->prepare('INSERT INTO users (Email, Name, UserName, DateOfBirth, Password) VALUES (?, ?, ?, ?, ?)');
                     $stmt->execute(array($email,$fullname, $gebruikersnaam,$gebdat, hash("sha256",$wachtwoord1)));
-                    //, (new DateTime())->format('Y-m-d H:i:s')
+                    header("Location: ../");
+                }
+                else
+                {
+                    $regError = 'Registreren mislukt!';
                 }
             }
+            else
+            {
+                $regError = 'Registreren mislukt!';
+            }
         }
-        ?>
+        unset($_POST);
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -116,6 +126,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Style/registreren.css" class="css">
+    <link rel="stylesheet" href="../Style/navbar.css" class="css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-216209027-1"></script>
 <script>
@@ -149,7 +160,6 @@
                 <a href="../sterke-drank"><img src="../img/Header/SterkeDrank.png" alt="Sterke Drank"></a>
                 <h2>Sterke drank</h2>
             </li>
-    
             <li>
                 <a href="../Login/"><h2 class="button">Login</h2></a>
                 <a href="./"><h2 class="button">Registreren</h2></a>
@@ -159,6 +169,7 @@
     <main>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <h1>Registreer</h1>
+            <span class="message error"><?php echo htmlentities($regError); ?></span>
 
             <label for="fullname">Volledige naam</label>
             <input type="text" id="fullname" name="fullname" class="inputVeld" value="<?php echo htmlentities($fullname); ?>">

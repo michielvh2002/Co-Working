@@ -1,0 +1,69 @@
+/* header*/
+
+header .container {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #d0d0d0;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+    gap: 15px;
+    max-height: 20rem;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    max-width: 120rem;
+}
+
+
+header .container ul li a img {
+    max-height: 10rem;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header .home a img {
+    height: 15rem;
+    border-right: 6px;
+}
+
+header .bier a img {
+    height: 15rem;
+    border-right: 6px;
+}
+
+header .wijn a img {
+    height: 15rem;
+}
+
+header .sterke a img {
+    height: 15rem;
+}
+header .button {
+    display: flex;
+    font-size: 2rem;
+    padding: 8px;
+    transition: 0.35s;
+    border: 0.3rem solid #4D4D4D;
+    flex-direction: column;
+    margin-top: 0.75rem;
+}
+header .button:hover a
+{
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+header .button:hover
+{
+    color: #ffffff;
+    background-color: #4D4D4D;
+    border-color: #4D4D4D;
+    transition: 0.35s;
+}
+header .container h2 {
+    text-align: center;
+    font-family: "Old English Text MT", serif;
+}

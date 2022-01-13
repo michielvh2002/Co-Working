@@ -37,6 +37,7 @@ if (isset($_POST["Post"])) {
             $stmt = $db->prepare('INSERT INTO posts (UserName, Date, Message) VALUES (?, ?, ?)');
             $stmt->execute(array($_SESSION["widrinksUser"], (new DateTime())->format('Y-m-d H:i:s'), $bericht));
             $bericht = '';
+            header("Location: ./");
         }
         else
         {
@@ -48,7 +49,7 @@ if (isset($_POST["Post"])) {
         $msgBericht = "U moet eerst ingelogd zijn voor u iets kan posten!";
     }
 }
-
+unset($_POST);
 
 ?>
 <!DOCTYPE html>
@@ -58,6 +59,7 @@ if (isset($_POST["Post"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Style/posts.css"/>
+    <link rel="stylesheet" href="../Style/navbar.css" class="css">
     <title>Document</title>
 </head>
 <body>
