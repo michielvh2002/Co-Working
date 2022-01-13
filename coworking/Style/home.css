@@ -1,0 +1,101 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #C1d1d4;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/*cookies*/
+.popup{
+    background-color: #0855ae;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    width: 45rem;
+    height: 25rem;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    display: none;
+}
+.popup button{
+    display: block;
+    margin: 1rem auto 0 auto;
+    font-size: 2rem;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*niewtjes*/
+
+.niewtjes{
+    max-width: 65rem;
+    margin: 2rem auto;
+    background-color: #E6E6E6;
+    border: 3px solid #000000;
+    box-shadow: 0.4rem -0.4rem #4d4d4d;
+}
+.niewtjes ul li {
+    list-style: none;
+    border-bottom: 1px solid gray;
+}
+#last {
+    border: none;
+}
+
+.niewtjes h1{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+
+.niewtje{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.niewtje img{
+    width: auto;
+    height: 20rem;
+}
+.nImage {
+    margin-right: 1rem;
+    text-align: right;
+}
+
+.inleiding-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.lees-meer{
+    border-radius: 3rem;
+    background-color: #d99800;
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: flex;
+    color: black;
+    width: 13rem;
+    justify-content: center;
+
+}
+.img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
