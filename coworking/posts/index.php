@@ -73,12 +73,12 @@ unset($_POST);
         
                 <li class="bier Hmenu">
                     <h2 class="Htext">Bier</h2>
-                    <a href="../bier/"" class="Himg"><img src="../img/Header/Bierglas.png" alt="Bierglas"></a>
+                    <a href="../bier/" class="Himg"><img src="../img/Header/Bierglas.png" alt="Bierglas"></a>
                 </li>
         
                 <li class="wijn Hmenu">
                     <h2 class="Htext">Wijn</h2>
-                    <a href="../wijn/"" class="Himg"><img src="../img/Header/Wijn.png" alt="Wijn"></a>
+                    <a href="../wijn/" class="Himg"><img src="../img/Header/Wijn.png" alt="Wijn"></a>
                 </li>
         
                 <li class="sterke Hmenu">
