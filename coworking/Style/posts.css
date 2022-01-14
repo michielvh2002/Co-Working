@@ -23,6 +23,9 @@ main {
     margin: 5rem;
     padding: 2rem;
 }
+#msgContainer > ul > li {
+    background-color: #FFFFFF;
+}
 form {
     padding-bottom: 1rem;
     border-bottom: 1px solid black;

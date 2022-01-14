@@ -105,7 +105,7 @@ unset($_POST);
     <main>
         <div id="msgContainer">
             <h2>Post een bericht!</h2>
-            <form action="" method="POST">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <textarea name="Bericht" id="Bericht" rows="10"><?php echo htmlentities($bericht); ?></textarea>
                 <span class="message error"><?php echo $msgBericht; ?></span><br>
                 <input type="submit" id="btnPost" name="Post" value="Post bericht">

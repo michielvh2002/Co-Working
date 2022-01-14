@@ -204,7 +204,7 @@
             <span class="message error"><?php echo $msgWachtwoord2; ?></span>
 
 
-            <label for="Geboortedatum"> Geboortedatum</label>
+            <label for="dag"> Geboortedatum</label>
 
             <div id="Geboortedatum">
                 <div class="select">
