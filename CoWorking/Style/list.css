@@ -67,7 +67,7 @@ header .button {
     transition: 0.35s;
     border: 0.3rem solid #4D4D4D;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 0.75rem;
 }
 header .button:hover a
 {
@@ -84,7 +84,6 @@ header .button:hover
 }
 header .container h2 {
     text-align: center;
-    font-family: "Old English Text MT", serif;
 }
 ul {
     list-style-type: none;
