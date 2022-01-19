@@ -44,6 +44,9 @@ h3 {
     margin-bottom: 2rem;
     max-width: 90rem;
 }
+.container h3{
+    max-width: 21.9rem;
+}
 main li img{
     background-color: #ffffff;
 
