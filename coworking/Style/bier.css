@@ -64,3 +64,15 @@ div p {
 body {
     background-color: #C1d1d4;
 }
+
+/* yt */
+.yt {
+    width: 61rem;
+    height: 34.3rem;
+}
+
+/* maps */
+#gmap_canvas {
+    width: 25rem;
+    height: 25rem;
+}
