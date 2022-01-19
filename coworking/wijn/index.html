@@ -2,10 +2,11 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Sterke Dranken</title>
+    <title>Wijn</title>
     <link rel="stylesheet" href="../Style/list.css">
     <link rel="stylesheet" href="../Style/navbar.css" class="css">
-    	<!-- Hotjar Tracking Code for https://coworking.michielvanhimbeeck.ikdoeict.be/ -->
+    <link rel="stylesheet" href="../Style/cookie.css" class="css">
+        	<!-- Hotjar Tracking Code for https://coworking.michielvanhimbeeck.ikdoeict.be/ -->
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -26,7 +27,7 @@
   gtag('config', 'UA-216209027-1');
 </script>
 </head>
-<body>
+<body onload="checkCookie()">
     <header>
         <div class="Hcontainer">
             <ul>
@@ -42,7 +43,7 @@
         
                 <li class="wijn Hmenu">
                     <h2 class="Htext">Wijn</h2>
-                    <a href="../wijn/" class="Himg"><img src="../img/Header/Wijn.png" alt="Wijn"></a>
+                    <a href="./" class="Himg"><img src="../img/Header/Wijn.png" alt="Wijn"></a>
                 </li>
         
                 <li class="sterke Hmenu">
@@ -67,5 +68,65 @@
         </div>
     </header>
 <main>
+    <div class="popup">
+        <h2>Leeftijdsverificatie</h2>
+        <p>Om deze site te betreden moet je ouder zijn dan 18</p>
+        <label for="age">Ik ben ouder dan 18</label>
+        <input type="checkbox" name="age" id="age" value="0">
+        <button onclick="setCookie()">Verder</button>
+    </div>
     <h1>Wijn</h1>
+    <ul class="container">
+        <li>
+            <img src="https://imgur.com/lL0Bok7.png" alt="">
+            <a href="../wijnen/leeg.html"><h3>L'Arjolle Côtes de Thongue rood 2020</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/3Tx7ZKC.png" alt="">
+            <a href="../wijnen/lacour.html"><h3>La Cour des Dames Pays d'Oc Merlot 2020</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/k99BbOM.png" alt="">
+            <a href="../wijnen/cantine.html"><h3>Cantine Due Palme Squinzano Angelini 2019</h3></a>
+        </li>
+    </ul>
+
+    <ul class="container">
+        <li>
+            <img src="https://imgur.com/5nIZI76.png" alt="">
+            <a href="../wijnen/révélation.html"><h3>Révélation pays d'oc cabernet-merlot 2019</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/sbu3Rzc.png" alt="">
+            <a href="../wijnen/montedelfra.html"><h3>Monte del Frà Bardolino 2020</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/rYsPdgc.png" alt="">
+            <a href="../wijnen/dilenardo.html"><h3>Di Lenardo Vineyards Venezia Giulia Pinot Grigio 2020</h3></a>
+        </li>
+    </ul>
+
+    <ul class="container">
+        <li>
+            <img src="https://imgur.com/Okf5iGH.png" alt="">
+            <a href="../wijnen/bodegas.html"><h3>Bodegas Piqueras Almansa White Label Verdejo-Sauvignon Blanc 2020</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/UCIrPda.png" alt="">
+            <a href="../wijnen/pontificis.html"><h3>Pontificis Pays d'Oc Chardonnay-Viognier 2020</h3></a>
+        </li>
+
+        <li>
+            <img src="https://imgur.com/VX4M2Gr.png" alt="">
+            <a href="../wijnen/révélationpays.html"><h3>Révélation Pays d'Oc Chardonnay 2020</h3></a>
+        </li>
+    </ul>
 </main>
+<script src="../javascript/cookies.js"></script>
+</body>
+</html>

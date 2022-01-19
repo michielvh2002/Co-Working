@@ -5,6 +5,7 @@
     <title>Jack Daniels</title>
     <link rel="Stylesheet" href="../Style/bier.css">
     <link rel="stylesheet" href="../Style/navbar.css" class="css">
+    <link rel="stylesheet" href="../Style/cookie.css" class="css">
     	<!-- Hotjar Tracking Code for https://coworking.michielvanhimbeeck.ikdoeict.be/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -26,7 +27,7 @@
   gtag('config', 'UA-216209027-1');
 </script>
 </head>
-<body>
+<body onload="checkCookie()">
     <header>
         <div class="Hcontainer">
             <ul>
@@ -67,6 +68,13 @@
         </div>
     </header>
 <main>
+    <div class="popup">
+        <h2>Leeftijdsverificatie</h2>
+        <p>Om deze site te betreden moet je ouder zijn dan 18</p>
+        <label for="age">Ik ben ouder dan 18</label>
+        <input type="checkbox" name="age" id="age" value="0">
+        <button onclick="setCookie()">Verder</button>
+    </div>
     <div class="container">
         <div class="container2">
             <img class="img" src="https://imgur.com/SL110DH.png" alt="Jack Daniels">
@@ -83,5 +91,6 @@
 <footer>
     <p>Co-Working - groep 7 - socials - copyright</p>
 </footer>
+<script src="../javascript/cookies.js"></script>
 </body>
 </html>

@@ -27,7 +27,8 @@ footer {
 }
 
 .persoon img{
-    border-radius: 3rem;
+    border-radius: 100%;
+    width: 15rem;
 }
 
 .personen {

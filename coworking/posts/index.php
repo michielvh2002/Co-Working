@@ -60,9 +60,10 @@ unset($_POST);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Style/posts.css"/>
     <link rel="stylesheet" href="../Style/navbar.css" class="css">
+    <link rel="stylesheet" href="../Style/cookie.css" class="css">
     <title>Posts</title>
 </head>
-<body>
+<body onload="checkCookie()">
 <header>
         <div class="Hcontainer">
             <ul>
@@ -103,6 +104,13 @@ unset($_POST);
         </div>
     </header>
     <main>
+    <div class="popup">
+        <h2>Leeftijdsverificatie</h2>
+        <p>Om deze site te betreden moet je ouder zijn dan 18</p>
+        <label for="age">Ik ben ouder dan 18</label>
+        <input type="checkbox" name="age" id="age" value="0">
+        <button onclick="setCookie()">Verder</button>
+    </div>
         <div id="msgContainer">
             <h2>Post een bericht!</h2>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
